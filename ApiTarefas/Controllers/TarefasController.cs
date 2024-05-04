@@ -51,7 +51,7 @@ public class TarefasController : ControllerBase
         }
         catch(TarefaErro erro)
         {
-            return StatusCode(404, new ErroView { Mensagem = erro.Message });
+            return StatusCode(400, new ErroView { Mensagem = erro.Message });
         }
     }
 
